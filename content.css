@@ -1,0 +1,324 @@
+body {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+
+#nav-list li {
+	margin-left: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.img-desc {
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.back {
+	width: 100%;
+	background-color: #666666;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    font-weight: normal;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 850px;
+  }
+}
+
+.img-margin {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+p {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;	
+	font-size: 16px;
+}
+
+	/* Tablet */
+	@media (max-width: 768px) {
+		p, ul li, ol li {
+			font-size: 14px;
+		}	
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			p, ul li {
+				font-size: 12px;
+			}		
+		}	
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+	li {
+    margin-bottom: 10px;
+	}
+}
+
+.inline {
+	display: inline;
+}
+
+.top {
+	margin-top: 40px;
+}
+
+.bottom {
+	margin-bottom: 40px;
+}
+
+
+/* TITLE (H2) */
+
+
+.title {
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 30px;
+}
+
+	@media (max-width: 768px) {
+		.title {
+			margin-top: 200px;
+			margin-bottom: 30px;
+		}
+
+		h2.title {
+			font-size: 25px !important;
+		}
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.title {
+					margin-top: 100px;
+					margin-bottom: 20px;
+				}
+
+			h2.title {
+				font-size: 20px;
+			}
+		}
+
+
+/* PROJECT DETAILS */
+
+
+
+.project-details {
+	text-align: center;
+	width: 80%; 
+	margin: 0 auto;
+	margin-bottom: 50px !important;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+	/* Tablet */
+	@media (max-width: 768px) {
+		.project-details {
+			font-size: 18px;
+			margin-bottom: 60px !important;
+		}
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.project-details {
+				font-size: 14px;
+				width: 100%; 
+				margin-bottom: 20px !important;
+			}
+		}
+
+.bold-intro {
+	font-weight: 600;
+}
+
+
+/* TITLE & TEXT-BORDER (H2) */
+
+h2.title-2 {
+	display: inline-block;
+}
+
+	@media (max-width: 768px) {
+		h2.title-2 {
+			font-size: 25px;
+		}
+	}
+
+		@media (max-width: 480px) {
+			h2.title-2 {
+				font-size: 20px;
+			}
+		}
+
+
+.text-border {
+	width: 9px;
+	height: 23px;
+	display: inline-block;
+	background-color: black;
+}
+
+	/* Tablet */
+	@media (max-width: 768px) {
+		.text-border {
+			width: 9px;
+			height: 20px;
+		}
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.text-border {
+				width: 7px;
+				height: 17px;
+			}
+		}
+
+
+/* AUTONOMOUS VEHICLE CONTENT */
+
+
+#note {
+	font-size: 14px;
+}
+
+	/* Tablet */
+	@media (max-width: 768px) {
+		#note {
+			font-size: 12px;
+
+		}
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			#note {
+				font-size: 10px;
+			}
+		}
+
+#process-img {
+	margin: 0 auto;
+}
+
+
+/* RESEARCH SECTION */
+
+.research-block {
+	width: 100%;
+    font-size: 20px;
+}
+
+.summary-title {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+.core-block {
+	width: 100%;
+	background-color: #35167F;
+    font-size: 32px !important;
+    font-style: italic;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+
+	/* Tablet */
+	@media (max-width: 768px) {
+		.core-block {
+			font-size: 26px !important;
+		}	
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.core-block {
+				font-size: 20px !important;
+			}		
+		}	
+
+
+.auto-icon {
+	margin: 0 auto;
+}
+ 
+
+.img-border {
+	border: 1px black solid;
+}
+
+
+/* USABILITY TESTING CAROUSEL */
+
+.glyphicon-chevron-left:before {
+	font-size: 50px;
+}
+
+.glyphicon-chevron-right:before {
+	font-size: 50px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
+
+
+/* Chevron arrows on mobile*/
+	@media (max-width: 480px) {
+			.glyphicon-chevron-left:before {
+				font-size: 25px;
+			}
+
+			.glyphicon-chevron-right:before {
+				font-size: 25px;
+		}
+
+
+
+/* WHAT I LEARNED */
+
+
+@media (max-width: 768px) {
+	h3 {
+		font-size: 20px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	h3 {
+		font-size: 16px !important;
+	}
+}
+
+/* CON UI CUSTOM STYLES */
+
+
+/* ABOUT PAGE */
+
+.container #about-container {
+	margin-top: 200px;
+}
+

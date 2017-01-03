@@ -1,0 +1,366 @@
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-family: 'Raleway', serif !important;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.top {
+	margin-top: 60px;
+}
+
+.bottom {
+	margin-bottom: 60px;
+}
+
+/*
+
+font-family: 'Lateef', cursive !important;
+font-family: 'Raleway', sans-serif !important;
+font-family: 'Poiret One', cursive !important;
+font-family: 'Scope One', serif !important;
+font-family: 'Roboto Slab', serif;
+
+*/
+
+
+/* ------------------------------------- HOMEPAGE ------------------------------------- */
+
+/* NAV STLYING */
+
+#nav-list {
+ /* Change padding around entire nav item/bar */
+}
+
+.navbar {
+	background-color: transparent !important;
+	border: transparent !important;
+	padding: 10px 40px;
+	position: relative;
+}
+
+/* Nav bar brand left */
+
+#nav-name { 
+	color: #000000;
+	font-size: 28px;
+}
+
+
+/* NAV BAR FONT SIZING */
+
+
+.nav > li > a { 
+	color: #000000 !important;
+	font-size: 20px;
+}
+
+	/* Tablet */
+	@media (max-width: 768px) {
+		#nav-name { 
+			color: #000000;
+			font-size: 28px;
+		}
+
+		.nav > li > a { 
+			color: #000000 !important;
+			font-size: 16px;
+		}
+
+	}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			#nav-name { 
+				color: #000000;
+				font-size: 24px;
+			}
+
+			.nav > li > a { 
+				color: #000000 !important;
+				font-size: 16px;
+			}
+
+		}
+
+
+/* END NAV BAR FONT SIZING */
+
+.navbar-toggle {
+	background-color: #595959 !important;
+}
+
+#nav-name:hover {
+	color: #595959 !important;
+}
+
+/* Nav bar li style properties */
+
+
+.navbar .active a { /* Change active link background color on scroll */
+	background-color: transparent !important;
+}
+
+.nav > li > a:hover {
+	color: #8c8c8c !important;
+}
+
+.nav-background { /* Nav bar background that shows up on scroll */
+	background-color: #D6E0FF !important;
+	opacity: .9;
+}
+
+/* END NAV & JUMBOTRON */
+
+div.container-fluid {
+	padding: 0;  /* Remove gutter space from left and right of columns */
+}
+
+/* PORTFOLIO */
+
+.margin-top {
+	margin-top: 50px;
+}
+
+.margin-bottom {
+	margin-bottom: 50px;
+}
+
+#margin-bottom-imgs { /* Add space beneath images*/
+	margin-bottom: 30px;
+}	
+
+#portfolio-background {
+	background-color: white;
+}
+
+.row.projects {
+	text-align: center;
+}
+
+.item-img {
+	margin-bottom: 10px;
+}
+
+/*  END NAV, BEGIN JUMBOTRON */
+
+.jumbotron {
+	position: relative;
+	min-width: 100%;
+	min-height: 100vh;
+	margin-bottom: 0 !important;
+	background-color: transparent !important;
+	z-index: 1;
+	background-image: url("images/background.jpg") !important;
+}
+
+.jumbotron::after { /* Transparent color layer over background */
+	content: "";
+ 	background-size: cover;
+ 	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: 6; 
+}
+
+#jumbotron-header { /* Centered content in jumbotron */
+	color: black !important;
+	padding-top: 25vh;
+}
+
+/* JUMBOTRON FONT SIZING */
+
+#jumbotron-header h1 {
+	font-size: 78px;
+}
+
+#jumbotron-header h2 {
+	font-size: 34px;
+}
+
+#jumbotron-header h3 {
+	font-size: 24px;
+}
+		/* Mobile (25% SMALLER) */
+		@media (max-width: 480px) {
+			#jumbotron-header h1 {
+				font-size: 58px;
+			}
+
+			#jumbotron-header h2 {
+				font-size: 24px;
+			}
+
+			#jumbotron-header h3 {
+				font-size: 18px;
+			}
+
+		}
+
+/* END JUMBOTRON FONT SIZING */
+
+
+/* ARROW */
+
+#wrapper-arrow {
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    position: absolute;
+    margin: auto;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
+
+#wrapper-arrow:hover {
+	cursor: pointer;	
+}
+
+#arrow {
+    position: absolute;
+    margin: auto;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    text-align: center;
+    -webkit-animation: bounce 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-10px); }
+	80% { -webkit-transform: translateY(-10px); } 
+}
+
+.glyphicon-menu-down {
+    color: #00000;
+    font-size: 1.3em;
+    text-shadow: 0px 0px 0px #000000;
+}
+
+/* END ARROW */
+
+/* ...................................................................... */
+
+/* PROJECTS SECTION */
+
+a .text, a .project-desc, a .project-desc-2 {
+	color: black !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.text {
+	font-size: 20px;
+	margin-bottom: 15px;
+	font-family: 'Roboto', serif;
+}
+
+		/* Mobile */
+		@media (max-width: 993px) {
+			.text {
+				margin-top: 20px;
+				font-size: 18px; 
+			}
+		}
+
+
+.project-desc {
+	font-size: 22px;
+}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.project-desc {
+				font-size: 14px;
+			}
+		}
+
+.project-desc-2 {
+	font-size: 18px;
+}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.project-desc-2 {
+				font-size: 12px;
+			}
+		}
+
+.role-title {
+	font-weight: 600;
+}
+
+hr { 
+	margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    border: 0;
+    border-top: 1px solid #a6a6a6 !important;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+	padding-top: 15px; 
+	padding-bottom: 7.5px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 18px;
+	background-color: #b3ffd9;
+	 
+}
+
+		/* Tablet */
+		@media (max-width: 768px) {
+			.footer {
+				font-size: 16px;
+				padding-left: 25px;
+				padding-right: 25px;
+			}
+		}
+
+		/* Mobile */
+		@media (max-width: 480px) {
+			.footer {
+				font-size: 14px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+#bootstrap-logo {
+	height: 35px;
+	width: 35px;
+}
+
+#github-logo {
+	margin-top: -5px;
+}
+
+
+

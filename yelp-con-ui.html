@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yelp Con UI | Isha Bagha</title>
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="content.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="javascript.js"></script>
+
+  <!-- GA TRACKING CODE -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57146553-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+
+<body>
+  <!-- Begin Nav Bar -->
+  <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-header"> <!-- Name on left of nav bar -->
+        <a class="navbar-brand" id="nav-name" href="index.html">ISHA BAGHA</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse"> <!-- Button collapse mobile -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navHeaderCollapse">
+      <ul class="nav navbar-nav navbar-right pull-right" id="nav-list"> <!-- Nav bar content -->
+        <li><a href="/">PORTFOLIO</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="https://iu.box.com/v/isha-bagha-resume">RESUME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End Nav Bar, Begin Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title">Chef - A Yelp Conversational UI Bot</h2>
+      </div>
+      <div class="col-md-12">
+        <p class="project-details"><span class="bold-intro">MY ROLE:</span> Facilitator, User Research, Personas, Wireframing, Usability Testing&nbsp;&nbsp;||&nbsp;&nbsp;<span class="bold-intro">TEAM:</span> Yuki Zhang, Roosevelt Faulkner, Ethan Helfrich&nbsp;&nbsp;||&nbsp;&nbsp;<span class="bold-intro">DURATION:</span> 2 Weeks&nbsp;&nbsp;||&nbsp;&nbsp;<span class="bold-intro">TOOLS:</span> Sketch</p>
+      </div>
+    </div>
+  </div>  
+
+  <!-- INTRO -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <!-- CHALLENGE -->
+        <h2 class="title-2">CHALLENGE</h2>
+          <p>Yelp has 25 million average monthly mobile app users<a href="https://www.yelp.com/factsheet"><sub>&#8250;</sub></a>. There are <strong>two types of people who use Yelp</strong>:</p>
+          <ol>
+            <li>People who <strong>know the specific retaurant they want</strong> to search for.</li>
+            <li>People who <strong>have just an idea of what</strong> they want or a certain critera (price point, cuisine), but not a specific restaurant in mind.</li>
+          </ol>
+          <p><strong>Our focus is on the latter group.</strong> For the second category of Yelp users, searching for a restaurant to fit their needs is time consuming and labor intensive. They need to comb through rankings and reviews to come to a final descision. <strong>Our challenge is to leverage <a href="http://alistapart.com/article/all-talk-and-no-buttons-the-conversational-ui">conversational UI</a> to improve the user's experience when they are searching for something to eat.</strong></p>
+
+          <p><strong>Constraint:</strong> Optimize the design so the <strong>user is funneled down to one specific checkout option: delivery</strong> (as opposed to dine-in, take out).</p>
+          <p><strong>Target Group:</strong> Millenials </p>
+        </div>  
+
+
+        <!-- PROCESS -->
+
+        <div class="col-md-12">
+          <h2 class="title-2">PROCESS</h2>
+            <img class="img-responsive img-margin" id="process-img" src="images/con-ui/yelp-process.jpg">
+          </div> 
+        </div>
+      </div>
+    </div>  
+  </div>  
+
+  <!-- RESEARCH -->
+
+  <div class="container">
+    <div class="row top">
+      <div class="col-md-12">
+        <div class="text-border" style="background-color: #FFB3B3;"></div>&nbsp;&nbsp;<h2 class="title-2">RESEARCH</h2>
+        <p>We interviewed university students and other millenials. To start, <strong>we broke our research into two categories:</strong></p>
+        <ol style="list-style-type: lower-alpha !important;">
+          <li><strong>Behavior - how users search for food and make decisions about where to eat.</strong>
+
+          <p>To test behavior, we gave users scenarios of what they would do in certain situations when they want food (far from home, very hungry, new to a city, want Thai food, etc.). Some users showed us their search process on their mobile 
+          phones.</p></li>
+
+          <li><strong>Restaurant review content tructure - What elements of the review structure users are more or less receptive to, why or why not.</strong>
+
+          <p>To test strengths and weakensses in the content achitecture, we gave users scenarios and <strong>presented them with varied reviews, and assessed how these reviews led them to make a restaurant decision</strong>. Some factors we varied are:</p>
+          <ul style="margin-left: 20px;">
+            <li>Using both Google and Yelp reviews</li>
+            <li>Photos (high-quality, low-quality)/no photos</li>
+            <li>Short, medium, and longer length reviews</li>
+            <li>Positive, negative, and neutral reviews</li>
+          </ul>
+          <p>We also asked users to underline or circle the most helpful text in the reviews.</p>
+          <img class="img-responsive" src="images/con-ui/sample-research.jpg">
+          <span class="img-desc">An example of our research questionnaire. Users underlined or circled the text they found most hepful.</span>
+        </ol>
+      </div>  
+    </div>  
+  </div>
+
+  <div class="container research-block">
+    <div class="row top">  
+
+      <div class="col-sm-6">
+        <p class="summary-title">BEHAVIOR</p>
+        <ul>
+          <li><u>Trust</u>: <strong>Multiple one-star reviews</strong> that rant about specific restaurant experiences <strong>weaken trust</strong> with Yelp. Instead, <strong>users visit other online review sites</strong> like Google, TripAdvisor, and FourSuqare to find reviews.</li> 
+          <li><u>Specificity:</u> Users have <strong>difficulty finding restaurants based on a combination of specific attributes</strong> such as: ingredients used in dishes, dietary restrictions, price range, distance, etc.</li>
+        </ul>  
+      </div>  
+
+
+      <div class="col-sm-6">
+        <p class="summary-title">CONTENT STRUCTURE</p>
+        <ul>
+          <li><u>Photos:</u><strong> Bad-quality photos deter users.</strong> from reivew.</li>
+          <li><u>Detail:</u> Users <strong>scan for rich details and descriptions.</strong></li>
+          <li><strong><u>Text Size</u>:</strong> Needs to be <strong>larger and clearer.</strong></li>
+          <li><u>Stars</u>: Users have a strong association with <strong>star icons</strong> - they are the <strong>first thing they glance at.</strong></li>
+          <li><u>Number of Reviews</u>: For users, <strong>more reviews = more credibility.</strong></li>
+          <li><u>Higest Rating</u>: Users <strong>mostly select</strong> the <strong>highest-rated restaurants</strong> to browse.</li>
+        </ul>  
+      </div>  
+    </div>
+  </div>  
+
+
+  <!-- IDEATION -->
+
+  <div class="container">
+    <div class="row top">
+      <div class="col-md-12">
+        <div class="text-border" style="background-color: #FB7E7E;"></div>&nbsp;&nbsp;<h2 class="title-2">IDEATION</h2>
+          <p>Our user research revealed user painpoints and what features of Yelp restaurant listings and reviews users find most helpful and least helpful. To improve the experience of searching for food, <strong>our goals in ideating were:</strong></p>
+            <ol>
+              <li>Restructure how <strong>Yelp content</strong> is displayed based on research findings, so that it’s <strong>scannable and digestible</strong>.</li>      
+              <li>Provide users with <strong>tailored results</strong>.</li>
+              <li><strong>Build trust</strong> with Yelp.</li>
+            </ol>
+      </div>  
+    </div>  
+
+    <div class="row bottom">
+      <div class="col-md-7">
+        <img class="img-responsive" src="images/con-ui/ideation-sketch-1.jpg">
+        <span class="img-desc">Individual sketching</span>
+      </div>
+
+      <div class="col-md-5">
+        <img class="img-responsive" src="images/con-ui/ideation-sketch-2.jpg">
+        <span class="img-desc">Group ideation session</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img class="img-responsive" src="images/con-ui/ideation-sketch-3.jpg">
+        <span class="img-desc">Group ideation session</span>
+      </div>
+    </div>
+  </div> 
+
+  <!-- DESIGN -->
+
+  <div class="container">
+    <div class="row top">
+      <div class="col-md-12">
+        <div class="text-border" style="background-color: #FF0000;"></div>&nbsp;&nbsp;<h2 class="title-2">DESIGN</h2>
+        <img class="img-responsive" src="images/con-ui/con-ui-design.jpg">
+      </div>  
+    </div>  
+  </div> 
+
+  <!-- USABILITY TESTING -->
+
+  <div class="container">
+    <div class="row top">
+      <div class="col-md-12">
+        <div class="text-border" style="background-color: #E60000;"></div>&nbsp;&nbsp;<h2 class="title-2">USABILITY TESTING</h2>
+        <p>After recruiting two participants in our target group, we created a <strong>whiteboard prototype</strong>
+        and started by giving participants a <strong>specific task: order Chinese food for delivery.</strong></p>
+        <p>Pre-determined text was written on post-it notes, and users could write their 
+        response to questions on the white board.</p>
+      </div>  
+    </div>  
+
+    <!-- Usability Testing Photos -->
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="img-responsive" src="images/con-ui/conui-usability-1.jpg">
+      </div>
+
+      <div class="col-sm-4">
+        <img class="img-responsive" src="images/con-ui/conui-usability-2.JPG">
+      </div>
+
+       <div class="col-sm-4">
+        <img class="img-responsive" src="images/con-ui/conui-usability-3.JPG">
+        <span class="img-desc">Flow and interactions through our whiteboard prototype</span>
+      </div>
+    </div>
+
+    <!-- Usability Testing Findings -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <p>Action items for iteration:</p>
+        <ol>
+          <li>Make <strong>ordering more transparent</strong></li>
+          <li>Add <strong>delivery/minimum delivery fee</strong> to menu</li>
+          <li>Change tone of <strong>bot to be more ‘friendly’</strong></li>
+          <li>Let <strong>conversation flow naturally</strong></li>
+        </ol>
+      </div>
+    </div>
+  </div> 
+
+
+  <!-- ITERATION -->
+
+  <div class="container">
+    <div class="row top">
+      <div class="col-md-12">
+        <div class="text-border" style="background-color: #B30000;"></div>&nbsp;&nbsp;<h2 class="title-2">ITERATION</h2>
+      </div>
+    </div>  
+
+    <div class="row bottom">
+      <div class="col-md-4">
+        <img class="img-responsive" src="images/con-ui/jesse.png">
+      </div>
+      <div class="col-md-8">
+        <p>Jesse is a 26 year old first year PhD student. She is completely new to Bloomington and doesn’t know a lot of people. It’s Saturday night and she’s planning on having her new friend Ella over for a movie night. Ella and Jesse plan to have dinner delivered while watching movies.</p>
+
+        <p>Since Jesse is not familiar with many restaurants in town, she uses Yelp’s Chef app to help her find something in town she can eat. She opens the app and is greeted by the conversational UI bot.</p> 
+      </div>
+    </div>
+  </div>      
+
+  <!-- Carousel Styling -->
+  
+  <style>
+
+    .glyphicon-chevron-right, .glyphicon-chevron-left {
+      text-shadow: -2px 0 #4d4d4d, 0 2px #4d4d4d, 2px 0 #4d4d4d, 0 -2px #4d4d4d;
+      opacity: 1;
+      color: #e9c8c8;
+    }
+
+    .carousel-indicators {
+      bottom: 0;
+    }
+
+    .carousel-indicators .active, .carousel-indicators li {
+      width: 12px;
+      height: 12px;
+      opacity: .7;
+    }
+
+    .carousel-indicators .active {
+      background: #ffffff !important;
+    }
+
+    .carousel-indicators li {
+      background: #E2B6B6 !important;
+      border: 1px solid #000000;
+    }
+
+  </style>
+        
+  <!-- Final Design Carousel -->   
+
+  <div class="container">
+    <div class="row bottom">
+      <div class="col-md-12">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/con-ui/story-1.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/con-ui/story-2.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/con-ui/story-3.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/con-ui/story-4.jpg">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+<!-- WHAT I LEARNED SECTION -->
+
+ <div class="back">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title-2">What I Learned</h2>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="row">
+        <h3>1. Harness storytelling to showcase your design.</h3>
+        <p style="margin-left: 20px;">My team and I spent a good amount of time developing two personas that fit our design. We utilized those personas throughout our process. When it came time to document our final design, we again utilized one of our personas to tell a story. Contexualizing a design through a story is much more engaging to your audience, and demonstrates the power of your design in a real-world setting. 
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="row">
+        <h3>2. Know the technology you're working with.</h3>
+        <p style="margin-left: 20px;">We created a chatbot with the assumption that it can recognize and respond to any input. In reality, artifical intelligence is not advanced enough to do this. Knowing the current limitations of AI could have given us constraints to put on our design. We could have pinpointed where errors might occur in the conversation with the chatbot and optimized our design to address such situations.
+        </p>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+</body>
